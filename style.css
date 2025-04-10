@@ -1,0 +1,80 @@
+/* Reset basico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* CabeĆ§alho */
+header {
+  background-color: #ff3f3f;
+  color: white;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* ConteĆŗdo principal */
+main {
+  padding: 2rem 1rem;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+
+main p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* BotĆ£o do iFood */
+.ifood-button {
+  background-color: #ff3f3f;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(255, 63, 63, 0.4);
+}
+
+.ifood-button:hover {
+  background-color: #cc3232;
+  transform: scale(1.05);
+}
+
+/* RodapĆ© */
+footer {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+}
