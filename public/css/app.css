@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #EA1D2C;
+    /* Cor similar ao iFood - mantida por enquanto */
+}
+
+.search-container {
+    display: flex;
+    flex-grow: 0.5;
+    /* Ajusta o crescimento */
+}
+
+.search-container input[type="text"] {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 1em;
+    flex-grow: 1;
+    /* Ocupa o espaço disponível */
+    min-width: 200px;
+    /* Largura mínima */
+}
+
+.search-container button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #EA1D2C;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #c41925;
+}
+
+.user-nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    cursor: pointer;
+    /* Add cursor pointer for login/register */
+}
+
+.user-nav a.button {
+    background-color: #f1f1f1;
+    color: #EA1D2C;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 1px solid #EA1D2C;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-nav a.button:hover {
+    background-color: #EA1D2C;
+    color: white;
+}
+
+
+/* Categories */
+.categories {
+    padding: 30px 0;
+    background-color: #fff;
+    margin-top: 1px;
+    /* Separar do header */
+}
+
+.categories h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* Reduced gap slightly */
+    flex-wrap: wrap;
+}
+
+.category-item {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #555;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Added box-shadow transition */
+    white-space: nowrap;
+    /* Prevent wrapping */
+}
+
+.category-item:hover {
+    background-color: #f1f1f1;
+    border-color: #ccc;
+    color: #333;
+}
+
+.category-item.active {
+    /* Style for the active category */
+    background-color: #EA1D2C;
+    color: white;
+    border-color: #EA1D2C;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Restaurants & Special Offers */
+.restaurants,
+.special-offers {
+    padding: 40px 0;
+}
+
+.restaurants h2,
+.special-offers h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Use the same grid for both sections */
+.restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    min-height: 150px;
+    /* Adjusted min-height */
+}
+
+.restaurant-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    width: 100%;
+    height: 150px;
+    /* Altura fixa para a imagem */
+    background-color: #eee;
+    /* Placeholder color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.restaurant-card h3 {
+    font-size: 1.2em;
+    margin: 15px 15px 5px 15px;
+    color: #333;
+}
+
+.restaurant-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 15px;
+    line-height: 1.4;
+}
+
+.restaurant-card p:last-of-type {
+    /* Target last paragraph before offer tags container */
+    margin-bottom: 10px;
+}
+
+/* Offer Tags */
+.offer-tags {
+    padding: 0 15px 10px 15px;
+    /* Padding around tags */
+    margin-top: auto;
+    /* Push tags to the bottom */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    min-height: 25px;
+}
+
+.offer-tag {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.offer-tag.free-shipping {
+    background-color: #d4edda;
+    /* Light green background */
+    color: #155724;
+    /* Dark green text */
+    border: 1px solid #c3e6cb;
+}
+
+.offer-tag.discount {
+    background-color: #f8d7da;
+    /* Light red background */
+    color: #721c24;
+    /* Dark red text */
+    border: 1px solid #f5c6cb;
+}
+
+/* Footer */
+footer {
+    background-color: #e0e0e0;
+    color: #555;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    /* Keep margin from the last section */
+    font-size: 0.9em;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1050;
+    /* Above header */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1060;
+    /* Above overlay */
+    min-width: 300px;
+    max-width: 90%;
+}
+
+.modal-content {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: -15px;
+    /* Adjust position */
+    right: -20px;
+    /* Adjust position */
+    font-size: 2em;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+.modal h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #333;
+}
+
+.modal form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.modal form input[type="text"],
+.modal form input[type="email"],
+.modal form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Include padding in width */
+    font-size: 1em;
+}
+
+.modal form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #EA1D2C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.modal form button[type="submit"]:hover {
+    background-color: #c41925;
+}
+
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        flex-grow: 1;
+    }
+
+    .search-container input[type="text"] {
+        min-width: 0;
+        /* Remove min-width on smaller screens */
+    }
+
+    .user-nav {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .user-nav a {
+        margin-left: 0;
+    }
+
+    .restaurant-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .category-list {
+        justify-content: flex-start;
+        /* Align categories left */
+        overflow-x: auto;
+        /* Allow horizontal scroll if needed */
+        padding-bottom: 10px;
+        /* Space for scrollbar */
+    }
+
+    .modal {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .close-btn {
+        top: -10px;
+        right: -10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .search-container input[type="text"],
+    .search-container button {
+        font-size: 0.9em;
+        padding: 8px 10px;
+    }
+
+    .user-nav a {
+        font-size: 0.9em;
+    }
+
+    .user-nav a.button {
+        padding: 6px 12px;
+    }
+
+    .restaurant-grid {
+        grid-template-columns: 1fr;
+        /* Uma coluna em telas muito pequenas */
+    }
+
+    .restaurant-card h3 {
+        font-size: 1.1em;
+    }
+
+    .restaurant-card p {
+        font-size: 0.85em;
+    }
+
+    .category-item {
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
+
+    .offer-tag {
+        font-size: 0.75em;
+        padding: 2px 6px;
+    }
+}
