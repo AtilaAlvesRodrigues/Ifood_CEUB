@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Ifood_CEUB
 - **Pré-requisitos**
     
