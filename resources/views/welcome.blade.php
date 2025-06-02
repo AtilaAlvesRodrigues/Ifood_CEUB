@@ -10,7 +10,7 @@
             <button id="search-button">Buscar</button>
         </div>
         <nav class="user-nav">
-            <a href="#" id="login-btn">Entrar</a>
+            <a id="login-btn" href="/entrar">Entrar</a>
             <a href="#" class="button" id="register-btn">Cadastrar</a>
         </nav>
     </div>

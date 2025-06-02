@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Uni-Xepa - Login</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    @vite(['resources/css/login.css', 'resources/js/login.js'])
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 </head>
 
 <body>
@@ -99,23 +98,6 @@
                         </div>
 
                         <div class="input-group">
-                            <input type="tel" name="phone" placeholder="Telefone" required>
-                            <i class="fas fa-phone"></i>
-                        </div>
-
-                        <div class="input-group">
-                            <select name="university" required>
-                                <option value="">Selecione sua universidade</option>
-                                <option value="usp">USP - Universidade de São Paulo</option>
-                                <option value="unicamp">UNICAMP - Universidade Estadual de Campinas</option>
-                                <option value="unesp">UNESP - Universidade Estadual Paulista</option>
-                                <option value="puc">PUC - Pontifícia Universidade Católica</option>
-                                <option value="outras">Outras</option>
-                            </select>
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-
-                        <div class="input-group">
                             <input type="password" name="password" placeholder="Senha" required>
                             <i class="fas fa-lock"></i>
                         </div>
@@ -156,6 +138,7 @@
             </div>
         </div>
     </div>
+    <script src="{{ asset('js/login.js') }}" defer></script>
 </body>
 
 </html>

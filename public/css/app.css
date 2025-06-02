@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
@@ -33,8 +33,8 @@ header .container {
 .logo {
     font-size: 1.8em;
     font-weight: 700;
-    color: #EA1D2C;
-    /* Cor similar ao iFood - mantida por enquanto */
+    color: #af1ea6;
+    /* Main purple color */
 }
 
 .search-container {
@@ -57,7 +57,7 @@ header .container {
 .search-container button {
     padding: 10px 15px;
     border: none;
-    background-color: #EA1D2C;
+    background-color: #af1ea6;
     color: white;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
@@ -66,7 +66,7 @@ header .container {
 }
 
 .search-container button:hover {
-    background-color: #c41925;
+    background-color: #8e1885;
 }
 
 .user-nav a {
@@ -80,18 +80,17 @@ header .container {
 
 .user-nav a.button {
     background-color: #f1f1f1;
-    color: #EA1D2C;
+    color: #af1ea6;
     padding: 8px 15px;
     border-radius: 4px;
-    border: 1px solid #EA1D2C;
+    border: 1px solid #af1ea6;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .user-nav a.button:hover {
-    background-color: #EA1D2C;
+    background-color: #af1ea6;
     color: white;
 }
-
 
 /* Categories */
 .categories {
@@ -123,7 +122,8 @@ header .container {
     color: #555;
     cursor: pointer;
     font-size: 0.9em;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease,
+        border-color 0.3s ease, box-shadow 0.3s ease;
     /* Added box-shadow transition */
     white-space: nowrap;
     /* Prevent wrapping */
@@ -137,13 +137,12 @@ header .container {
 
 .category-item.active {
     /* Style for the active category */
-    background-color: #EA1D2C;
+    background-color: #af1ea6;
     color: white;
-    border-color: #EA1D2C;
+    border-color: #af1ea6;
     font-weight: 500;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 /* Restaurants & Special Offers */
 .restaurants,
@@ -244,11 +243,11 @@ header .container {
 }
 
 .offer-tag.discount {
-    background-color: #f8d7da;
-    /* Light red background */
-    color: #721c24;
-    /* Dark red text */
-    border: 1px solid #f5c6cb;
+    background-color: #f3e5f9;
+    /* Light purple background */
+    color: #5a1a52;
+    /* Dark purple text */
+    border: 1px solid #d4b5e0;
 }
 
 /* Footer */
@@ -343,7 +342,7 @@ footer {
 .modal form button[type="submit"] {
     width: 100%;
     padding: 12px;
-    background-color: #EA1D2C;
+    background-color: #af1ea6;
     color: white;
     border: none;
     border-radius: 4px;
@@ -355,9 +354,8 @@ footer {
 }
 
 .modal form button[type="submit"]:hover {
-    background-color: #c41925;
+    background-color: #8e1885;
 }
-
 
 /* Responsividade básica */
 @media (max-width: 768px) {
