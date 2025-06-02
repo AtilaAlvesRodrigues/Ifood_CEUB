@@ -17,7 +17,7 @@
                 <!-- Formulário de Login -->
                 <div class="login-form">
                     <div class="logo">
-                        <img src="{{ asset('images/Uni-Xepa Logo.png') }}" alt="Uni-Xepa Logo">
+                        <img src="{{ asset('img/Uni-Xepa Logo.png') }}" alt="Uni-Xepa Logo">
                     </div>
                     <h1 class="form-title">Entre na sua conta</h1>
 
@@ -72,7 +72,7 @@
                 <!-- Formulário de Registro -->
                 <div class="register-form">
                     <div class="logo">
-                        <img src="{{ asset('images/Uni-Xepa Logo.png') }}" alt="Uni-Xepa Logo">
+                        <img src="{{ asset('img/Uni-Xepa Logo.png') }}" alt="Uni-Xepa Logo">
                     </div>
                     <h1 class="form-title">Crie sua conta</h1>
 
@@ -130,7 +130,7 @@
         <div class="image-side" id="imageSide">
             <div class="image-content" id="imageContent">
                 <div class="food-image">
-                    <img src="{{ asset('images/food-placeholder.jpg') }}" alt="Comida deliciosa">
+                    <img src="{{ asset('img/lanchegostoso.png') }}" alt="Comida deliciosa">
                 </div>
                 <h2 id="imageTitle">Peça sua xepa favorita!</h2>
                 <p id="imageText">Bateu a fome na aula? Já se adiante e peça sua Xepa!</p>

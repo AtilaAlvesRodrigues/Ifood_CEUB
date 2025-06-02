@@ -4,6 +4,9 @@
 
 <header>
     <div class="container">
+        <div class="logo">
+            <img src="{{ asset('img/Uni-Xepa Logo.png') }}" alt="Uni-Xepa Logo">
+        </div>
         <div class="logo">UniXepa</div>
         <div class="search-container">
             <input type="text" id="search-input" placeholder="Buscar restaurantes ou itens...">

@@ -28,7 +28,7 @@ body {
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
 
-    min-height: 500px;
+    min-height: 850px;
     max-height: 1000px;
     overflow-y: auto;
 }
@@ -290,8 +290,6 @@ body {
     max-width: 280px;
     height: auto;
     margin: 0 auto;
-    border-radius: 12px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .image-side h2 {

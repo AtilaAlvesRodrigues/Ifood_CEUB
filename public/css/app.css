@@ -34,7 +34,13 @@ header .container {
     font-size: 1.8em;
     font-weight: 700;
     color: #af1ea6;
-    /* Main purple color */
+    margin: 0;
+}
+
+.logo img {
+    height: 100px;
+    margin: 0;
+    position: relative;
 }
 
 .search-container {
