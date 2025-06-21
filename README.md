@@ -1,7 +1,4 @@
-Claro! Aqui está o conteúdo do seu README.md, já formatado e pronto para copiar e colar no GitHub:
-
-````markdown
-# 🚀 iFood_CEUB — Guia de Instalação
+# 🚀 UNIXEPA — Guia de Instalação
 
 Este projeto utiliza Laravel 8 com PHP 8.2. Siga as etapas abaixo para configurar o ambiente e rodar a aplicação localmente.
 
